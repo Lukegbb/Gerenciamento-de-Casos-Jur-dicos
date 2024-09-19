@@ -15,6 +15,28 @@ This project is a legal case management system developed with Flask and SQLite f
 - SQLite Lightweight database for data storage.
 - HTMLCSS For the user interface.
 
+# Create and activate the virtual environment
+python3 -m venv venv
+
+# Linux/macOS
+source venv/bin/activate
+
+# Windows
+# venv\Scripts\activate
+
+# Install the dependencies
+pip install -r requirements.txt
+
+# Set up the database
+python database.py
+
+# Run the Flask server
+python app.py
+
+# Open the browser at the local address
+# Open http://127.0.0.1:5000 to access the application
+
+
 ## Project Structure
 
 ```plaintext
