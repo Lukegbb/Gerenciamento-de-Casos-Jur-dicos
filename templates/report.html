@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Relatório de Casos Jurídicos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Número</th>
+                <th>Cliente</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for caso in casos %}
+                <tr>
+                    <td>{{ caso[0] }}</td>
+                    <td>{{ caso[1] }}</td>
+                    <td>{{ caso[2] }}</td>
+                    <td>{{ caso[4] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
